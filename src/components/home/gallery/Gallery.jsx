@@ -20,7 +20,7 @@ const Gallery = () => {
       </div>
       <div className="flex items-center justify-center">
         <Link
-          href="/gallery"
+          href="https://drive.google.com/drive/folders/1BJHzv4BsZY7kAzUHNBNtB-Ny9gCmcXsE?usp=sharing"
           className="border rounded-lg px-5 py-2 text-2xl border-black hover:scale-110 duration-300"
         >
           See More
