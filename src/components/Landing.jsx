@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Sean from "@/public/sean.webp";
+import { FaStar } from "react-icons/fa";
 
-const Landing = () => {
+const Landing = ({ visible, setVisibility }) => {
   return (
     <div className="flex md:flex-row flex-col items-center justify-center md:h-[calc(100vh-5rem)] w-screen md:text-left text-center md:my-0 my-[8%] p-15">
       <Image
@@ -17,13 +18,14 @@ const Landing = () => {
         <div className="border-b w-full border-black mt-1 md:block hidden" />
         <div className="text-xl font-bold my-3">he/him - web developer</div>
         <div className="text-wrap">
-          Welcome to my website! I am currently an undergraduate student
-          studying computer science at University of California, Riverside. I am
-          seeking web development, full stack engineering, and software
-          engineering opportunities. In my spare time, I draw digitally and
-          traditionally. I aim to fill an entire sketchbook with completed
-          drawings leaving no blank pages before 2024 ends.
+          Welcome to my website! I am a recent computer science graduate from
+          University of California, Riverside. I am seeking web development,
+          full stack engineering, and software engineering opportunities. In my
+          spare time, I draw digitally and traditionally.
         </div>
+        <button onClick={() => setVisibility(!visible)}>
+          <FaStar />
+        </button>
       </div>
     </div>
   );

@@ -16,10 +16,6 @@ export const CONTACT = [
   },
   {
     icon: <MdEmail className={CSS} />,
-    link: "mailto:squia003@ucr.edu",
-  },
-  {
-    icon: <IoDocumentText className={CSS} />,
-    link: "https://drive.google.com/file/d/1nClFUJK-3DSWQGrbGWW06MiCCkNvhDyh/view?usp=sharing",
+    link: "mailto:slquiambao03@gmail.edu",
   },
 ];

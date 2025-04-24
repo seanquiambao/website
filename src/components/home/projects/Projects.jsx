@@ -1,26 +1,23 @@
 import Title from "@/components/Title";
-import Project from "@/components/home/projects/Project";
-import { PROJECTS } from "@/data/Projects";
+import Link from "next/link";
 const Projects = () => {
   return (
-    <>
-      <Title title="Projects" />
-      <div className="flex flex-col items-center my-[5%] gap-y-10">
-        {PROJECTS.map((project, index) => {
-          return (
-            <Project
-              key={index}
-              title={project.title}
-              date={project.date}
-              links={project.links}
-              points={project.body}
-              image={project.image}
-              index={index}
-            />
-          );
-        })}
-      </div>
-    </>
+    <div className="flex flex-col gap-2">
+      <Title title="Experience" />
+      <iframe
+        className="self-center md:block hidden"
+        src="https://drive.google.com/file/d/1xgNpBdV0jOA8eauFCJucjzfqrgZAQCKM/preview"
+        width="1200"
+        height="800"
+        allow="autoplay"
+      ></iframe>
+      <Link
+        href="https://drive.google.com/file/d/1xgNpBdV0jOA8eauFCJucjzfqrgZAQCKM/view"
+        className="border rounded-lg px-5 py-2 text-2xl border-black hover:scale-110 duration-300 w-fit self-center"
+      >
+        Download PDF
+      </Link>
+    </div>
   );
 };
 

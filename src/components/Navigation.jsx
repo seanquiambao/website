@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { HOME } from "@/data/Navigation";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaStar } from "react-icons/fa";
 import { useState } from "react";
 
 const Navigation = () => {

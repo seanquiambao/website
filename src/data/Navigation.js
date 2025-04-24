@@ -4,8 +4,8 @@ export const HOME = [
     ref: "#skills",
   },
   {
-    name: "projects",
-    ref: "#projects",
+    name: "experience",
+    ref: "#experience",
   },
   {
     name: "gallery",
